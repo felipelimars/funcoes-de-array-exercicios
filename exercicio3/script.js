@@ -11,3 +11,18 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+const novoArray = produtos.filter ((item) => {
+   return(item.categoria.toUpperCase() === `LIMPEZA`)
+})
+
+const arrayDeNomes = novoArray.map((item) => {
+return item.nome
+
+})
+
+ console.log(arrayDeNomes)
+
+
+
+
+ 
